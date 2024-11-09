@@ -17,7 +17,7 @@ public final class StateIdIsNotEmptyException extends RuleUcobetException {
 
     public static StateIdIsNotEmptyException create() {
         return new StateIdIsNotEmptyException(
-                MessageCatalogStrategy.getMessageContent(MessageCode.MSTA0004)
+                MessageCatalogStrategy.getMessageContent(MessageCode.MSTA0011)
         );
     }
 }

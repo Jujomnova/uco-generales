@@ -10,6 +10,10 @@ import java.util.List;
 
 public final class StateMapper {
 
+    private StateMapper() {
+        throw new IllegalStateException("Utility class");
+    }
+
     public static StateDomain map(final StateEntity data) {
         return StateDomain.create(
                 data.getId(),

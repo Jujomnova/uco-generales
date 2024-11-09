@@ -6,6 +6,6 @@ import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Service;
 
 @Service
-@Qualifier("RegisterNewCityNameRulesValidator")
+@Qualifier("registerNewCityNameRulesValidator")
 public interface RegisterNewCityNameRulesValidator extends RulesValidator<CityDomain> {
 }

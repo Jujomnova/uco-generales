@@ -10,6 +10,7 @@ public class UcobetException extends RuntimeException {
 
     @Serial
     private static final long serialVersionUID = 1L;
+
     private String userMessage;
     private Layer layer;
 

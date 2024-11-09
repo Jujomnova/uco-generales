@@ -1,18 +1,14 @@
 package co.edu.uco.ucobet.generales.infrastructure.secondaryadapters.notificationservice;
 
-import co.edu.uco.ucobet.generales.crosscutting.exception.ApplicationUcobetException;
 import co.edu.uco.ucobet.generales.crosscutting.exception.InfrastructureUcobetException;
-import co.edu.uco.ucobet.generales.crosscutting.exception.UcobetException;
 import co.edu.uco.ucobet.generales.crosscutting.messages.MessageCatalogStrategy;
 import co.edu.uco.ucobet.generales.crosscutting.messages.enums.MessageCode;
-import co.edu.uco.ucobet.generales.infrastructure.primaryadapters.controller.rest.Response;
 import com.sendgrid.Method;
 import com.sendgrid.Request;
 import com.sendgrid.SendGrid;
 import com.sendgrid.helpers.mail.Mail;
 import com.sendgrid.helpers.mail.objects.Content;
 import com.sendgrid.helpers.mail.objects.Email;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
 

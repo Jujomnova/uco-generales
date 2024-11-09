@@ -18,6 +18,6 @@ public final class CityNameFormatIsValidException extends RuleUcobetException {
 
     public static CityNameFormatIsValidException create(final String userMessage) {
         return new CityNameFormatIsValidException(
-                TextHelper.getDefault(userMessage, MessageCatalogStrategy.getMessage(MessageCode.MCIT0005).getContent()));
+                TextHelper.getDefault(userMessage, MessageCatalogStrategy.getMessageContent(MessageCode.MCIT0005)));
     }
 }

@@ -36,6 +36,7 @@ public enum MessageCode {
     MSTA0008(MessageCategory.ERROR, MessageType.BUSINESS, "MSTA0008", false),
     MSTA0009(MessageCategory.ERROR, MessageType.BUSINESS, "MSTA0009", false),
     MSTA0010(MessageCategory.SUCCESS, MessageType.BUSINESS, "MSTA0010", false),
+    MSTA0011(MessageCategory.ERROR, MessageType.BUSINESS, "MSTA0011", false),
 
     MCIT0000(MessageCategory.ERROR, MessageType.BUSINESS, "MCIT0000", false),
     MCIT0001(MessageCategory.ERROR, MessageType.BUSINESS, "MCIT0001", false),
@@ -50,6 +51,7 @@ public enum MessageCode {
     MCIT0010(MessageCategory.ERROR, MessageType.BUSINESS, "MCIT0010", false),
     MCIT0011(MessageCategory.ERROR, MessageType.BUSINESS, "MCIT0011", false),
     MCIT0012(MessageCategory.ERROR, MessageType.BUSINESS, "MCIT0012", false),
+    MCIT0013(MessageCategory.ERROR, MessageType.BUSINESS, "MCIT0013", false),
 
     MMAIL0000(MessageCategory.INFO, MessageType.BUSINESS, "MMAIL0000", false),
     MMAIL0001(MessageCategory.INFO, MessageType.BUSINESS, "MMAIL0001", false),

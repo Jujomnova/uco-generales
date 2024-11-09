@@ -16,22 +16,26 @@ public final class RegisterNewCityStateRulesValidatorImpl implements RegisterNew
     private final StateExistsRule stateDoesExistRule;
     private final StateIdIsValidRule stateIdIsNotDefaultValueRule;
     private final StateIdIsNotNullRule stateIdIsNotNullRule;
+    private final StateIdIsValidRule stateIdIsValidRule;
 
     public RegisterNewCityStateRulesValidatorImpl(final CityStateExistsRule cityStateExistsRule,
                                                    final StateExistsRule stateDoesExistRule,
                                                    final StateIdIsValidRule stateIdIsNotDefaultValueRule,
-                                                   final StateIdIsNotNullRule stateIdIsNotNullRule) {
+                                                   final StateIdIsNotNullRule stateIdIsNotNullRule,
+                                                   final StateIdIsValidRule stateIdIsValidRule) {
         this.cityStateExistsRule = cityStateExistsRule;
         this.stateDoesExistRule = stateDoesExistRule;
         this.stateIdIsNotDefaultValueRule = stateIdIsNotDefaultValueRule;
         this.stateIdIsNotNullRule = stateIdIsNotNullRule;
+        this.stateIdIsValidRule = stateIdIsValidRule;
     }
 
     @Override
     public void validate(final UUID data) {
-        cityStateExistsRule.validate(StateDomain.create(data));
         stateIdIsNotNullRule.validate(data);
         stateIdIsNotDefaultValueRule.validate(data);
+        stateIdIsValidRule.validate(data);
+        cityStateExistsRule.validate(StateDomain.create(data));
         stateDoesExistRule.validate(data);
     }
 }

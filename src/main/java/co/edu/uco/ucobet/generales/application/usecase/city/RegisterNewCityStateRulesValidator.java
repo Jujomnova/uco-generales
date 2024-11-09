@@ -7,6 +7,6 @@ import org.springframework.stereotype.Service;
 import java.util.UUID;
 
 @Service
-@Qualifier("RegisterNewCityStateRulesValidator")
+@Qualifier("registerNewCityStateRulesValidator")
 public interface RegisterNewCityStateRulesValidator extends RulesValidator<UUID> {
 }

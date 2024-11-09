@@ -1,20 +1,15 @@
 package co.edu.uco.ucobet.generales.infrastructure.primaryadapters.controller.rest.state;
 
-import co.edu.uco.ucobet.generales.application.primaryport.dto.GetStateDTO;
-import co.edu.uco.ucobet.generales.application.primaryport.interactor.state.GetStatesInteractor;
 import co.edu.uco.ucobet.generales.application.primaryport.interactor.state.impl.GetStatesInteractorImpl;
 import co.edu.uco.ucobet.generales.crosscutting.exception.UcobetException;
 import co.edu.uco.ucobet.generales.crosscutting.messages.MessageCatalogStrategy;
 import co.edu.uco.ucobet.generales.crosscutting.messages.enums.MessageCode;
-import co.edu.uco.ucobet.generales.infrastructure.primaryadapters.controller.rest.city.RegisterNewCityResponse;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import java.util.List;
 
 @RestController
 @RequestMapping("/general/api/v1/states")

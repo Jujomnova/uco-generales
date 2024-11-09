@@ -3,7 +3,6 @@ package co.edu.uco.ucobet.generales.infrastructure.primaryadapters.controller.re
 import co.edu.uco.ucobet.generales.application.primaryport.dto.RegisterNewCityDTO;
 import co.edu.uco.ucobet.generales.application.primaryport.interactor.city.RegisterNewCityInteractor;
 import co.edu.uco.ucobet.generales.crosscutting.exception.UcobetException;
-import co.edu.uco.ucobet.generales.crosscutting.helpers.UUIDHelper;
 import co.edu.uco.ucobet.generales.crosscutting.messages.MessageCatalogStrategy;
 import co.edu.uco.ucobet.generales.crosscutting.messages.enums.MessageCode;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -39,10 +38,5 @@ public class RegisterNewCityController {
         }
 
         return new ResponseEntity<>(response, httpStatus);
-    }
-
-    @GetMapping
-    public RegisterNewCityDTO executeDummy() {
-        return RegisterNewCityDTO.create(UUIDHelper.generate(), "Rionegro");
     }
 }

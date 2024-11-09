@@ -4,7 +4,6 @@ import co.edu.uco.ucobet.generales.application.secondaryport.repository.CityRepo
 import co.edu.uco.ucobet.generales.crosscutting.helpers.ObjectHelper;
 import co.edu.uco.ucobet.generales.domain.city.exceptions.CityIdIsNotNullException;
 import co.edu.uco.ucobet.generales.domain.city.rules.CityIdIsNotNullRule;
-import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Service;
 
 import java.util.UUID;
@@ -12,7 +11,7 @@ import java.util.UUID;
 @Service
 public final class CityIdIsNotNullRuleImpl implements CityIdIsNotNullRule {
 
-    public CityRepository cityRepository;
+    public final CityRepository cityRepository;
 
     public CityIdIsNotNullRuleImpl(final CityRepository cityRepository) {
         this.cityRepository = cityRepository;

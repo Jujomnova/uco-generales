@@ -5,9 +5,8 @@ import co.edu.uco.ucobet.generales.crosscutting.helpers.ObjectHelper;
 import co.edu.uco.ucobet.generales.crosscutting.helpers.TextHelper;
 import co.edu.uco.ucobet.generales.crosscutting.messages.Message;
 import co.edu.uco.ucobet.generales.crosscutting.messages.MessageCatalog;
-import co.edu.uco.ucobet.generales.crosscutting.messages.MessageCatalogStrategy;
 import co.edu.uco.ucobet.generales.crosscutting.messages.enums.MessageCode;
-import co.edu.uco.ucobet.generales.infrastructure.secondaryadapters.messageCatalog.MessageCache;
+import co.edu.uco.ucobet.generales.infrastructure.secondaryadapters.messagecatalog.MessageCache;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -16,36 +15,33 @@ public class MessageCatalogBase implements MessageCatalog {
 
     private final Map<String, Message> messages = new HashMap<>();
 
-    private final MessageCache messageCache = MessageCache.getInstance();
-
     public final void initialize()
     {
         messages.clear();
-
         messages.put(MessageCode.M0000.getFullIdentifier(),
-                new Message(MessageCode.M0000, MessageCache.getInstance().getUserMessage(MessageCode.M0000.getId())));
+                new Message(MessageCode.M0000, MessageCache.getUserMessage(MessageCode.M0000.getId())));
         messages.put(MessageCode.M0001.getFullIdentifier(),
-                new Message(MessageCode.M0001, MessageCache.getInstance().getUserMessage(MessageCode.M0001.getId())));
+                new Message(MessageCode.M0001, MessageCache.getUserMessage(MessageCode.M0001.getId())));
         messages.put(MessageCode.M0002.getFullIdentifier(),
-                new Message(MessageCode.M0002, MessageCache.getInstance().getUserMessage(MessageCode.M0002.getId())));
+                new Message(MessageCode.M0002, MessageCache.getUserMessage(MessageCode.M0002.getId())));
         messages.put(MessageCode.M0003.getFullIdentifier(),
-                new Message(MessageCode.M0003, MessageCache.getInstance().getUserMessage(MessageCode.M0003.getId())));
+                new Message(MessageCode.M0003, MessageCache.getUserMessage(MessageCode.M0003.getId())));
         messages.put(MessageCode.M0004.getFullIdentifier(),
-                new Message(MessageCode.M0004, MessageCache.getInstance().getUserMessage(MessageCode.M0004.getId())));
+                new Message(MessageCode.M0004, MessageCache.getUserMessage(MessageCode.M0004.getId())));
         messages.put(MessageCode.M0005.getFullIdentifier(),
-                new Message(MessageCode.M0005, MessageCache.getInstance().getUserMessage(MessageCode.M0005.getId())));
+                new Message(MessageCode.M0005, MessageCache.getUserMessage(MessageCode.M0005.getId())));
         messages.put(MessageCode.M0006.getFullIdentifier(),
-                new Message(MessageCode.M0006, MessageCache.getInstance().getUserMessage(MessageCode.M0006.getId())));
+                new Message(MessageCode.M0006, MessageCache.getUserMessage(MessageCode.M0006.getId())));
         messages.put(MessageCode.M0007.getFullIdentifier(),
-                new Message(MessageCode.M0007, MessageCache.getInstance().getUserMessage(MessageCode.M0007.getId())));
+                new Message(MessageCode.M0007, MessageCache.getUserMessage(MessageCode.M0007.getId())));
         messages.put(MessageCode.M0008.getFullIdentifier(),
-                new Message(MessageCode.M0008, MessageCache.getInstance().getUserMessage(MessageCode.M0008.getId())));
+                new Message(MessageCode.M0008, MessageCache.getUserMessage(MessageCode.M0008.getId())));
         messages.put(MessageCode.M0009.getFullIdentifier(),
-                new Message(MessageCode.M0009, MessageCache.getInstance().getUserMessage(MessageCode.M0009.getId())));
+                new Message(MessageCode.M0009, MessageCache.getUserMessage(MessageCode.M0009.getId())));
         messages.put(MessageCode.M0010.getFullIdentifier(),
-                new Message(MessageCode.M0010, MessageCache.getInstance().getUserMessage(MessageCode.M0010.getId())));
+                new Message(MessageCode.M0010, MessageCache.getUserMessage(MessageCode.M0010.getId())));
         messages.put(MessageCode.M0011.getFullIdentifier(),
-                new Message(MessageCode.M0011, MessageCache.getInstance().getUserMessage(MessageCode.M0011.getId())));
+                new Message(MessageCode.M0011, MessageCache.getUserMessage(MessageCode.M0011.getId())));
     }
 
     @Override

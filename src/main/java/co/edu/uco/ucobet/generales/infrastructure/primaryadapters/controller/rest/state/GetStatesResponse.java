@@ -1,7 +1,6 @@
 package co.edu.uco.ucobet.generales.infrastructure.primaryadapters.controller.rest.state;
 
 import co.edu.uco.ucobet.generales.application.primaryport.dto.GetStateDTO;
-import co.edu.uco.ucobet.generales.application.primaryport.dto.RegisterNewCityDTO;
 import co.edu.uco.ucobet.generales.infrastructure.primaryadapters.controller.rest.Response;
 
 import java.util.ArrayList;

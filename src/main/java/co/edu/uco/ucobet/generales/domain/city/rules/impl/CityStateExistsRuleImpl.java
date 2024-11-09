@@ -9,7 +9,7 @@ import org.springframework.stereotype.Service;
 @Service
 public class CityStateExistsRuleImpl implements CityStateExistsRule {
 
-    public StateRepository stateRepository;
+    public final StateRepository stateRepository;
 
     public CityStateExistsRuleImpl(final StateRepository stateRepository) {
         this.stateRepository = stateRepository;

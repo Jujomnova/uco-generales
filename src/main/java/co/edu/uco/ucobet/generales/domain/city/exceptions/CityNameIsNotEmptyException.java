@@ -15,9 +15,9 @@ public final class CityNameIsNotEmptyException extends RuleUcobetException {
         super(userMessage, userMessage, new Exception());
     }
 
-    public static final CityNameIsNotEmptyException create() {
+    public static CityNameIsNotEmptyException create() {
         return new CityNameIsNotEmptyException(
-                MessageCatalogStrategy.getMessageContent(MessageCode.MCIT0003)
+                MessageCatalogStrategy.getMessageContent(MessageCode.MCIT0013)
         );
     }
 }

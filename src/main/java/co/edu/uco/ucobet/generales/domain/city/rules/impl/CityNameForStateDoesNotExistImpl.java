@@ -1,9 +1,6 @@
 package co.edu.uco.ucobet.generales.domain.city.rules.impl;
 
-import co.edu.uco.ucobet.generales.application.primaryport.mapper.state.StateDomainToDTOMapper;
 import co.edu.uco.ucobet.generales.application.secondaryport.entity.CityEntity;
-import co.edu.uco.ucobet.generales.application.secondaryport.entity.StateEntity;
-import co.edu.uco.ucobet.generales.application.secondaryport.mapper.CityDomainToEntityMapper;
 import co.edu.uco.ucobet.generales.application.secondaryport.mapper.StateMapper;
 import co.edu.uco.ucobet.generales.application.secondaryport.repository.CityRepository;
 import co.edu.uco.ucobet.generales.crosscutting.helpers.UUIDHelper;
