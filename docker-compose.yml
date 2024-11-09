@@ -1,0 +1,20 @@
+version: '3.8'
+
+services:
+  nginx:
+    image: nginx:latest
+    ports:
+      - "80:80"
+      - "443:443"
+    volumes:
+      - C:\Users\jujom\Downloads\nginx-1.26.2\conf\nginx.conf:/etc/nginx/nginx.conf
+  app:
+    image: uco-generales-ms
+    environment:
+      - GOOGLE_CLIENT_ID=64236256789-oc98cno9scmfbvnkkh92erj1hk27udng.apps.googleusercontent.com
+      - GOOGLE_CLIENT_SECRET=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
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "8080:8080"
